@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Ta bort! title eftersom att hemknappen alltid finns tillgänglig även utanför nav-bar
 ---
 
 Test av text, ser om det funkar och ändra i index.md
