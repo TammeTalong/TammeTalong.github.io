@@ -4,6 +4,7 @@ title:  "My thoughts on SCSS and SSG"
 author: Samuel Meijer
 date:   2019-11-15 08:25:30 +0100
 categories: jekyll update
+comments: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. 
 
