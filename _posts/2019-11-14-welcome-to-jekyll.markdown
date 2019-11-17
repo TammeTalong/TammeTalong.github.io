@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+author: Samuel Meijer
 date:   2019-11-14 05:12:57 +0100
 categories: jekyll update
 ---
