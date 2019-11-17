@@ -24,7 +24,7 @@ author: Samuel Meijer
 description: >- # this means to ignore newlines until "baseurl:"
   Samuel Meijers webpage for course 1DV022 - Client-based Webprogramming
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: TammeTalong
 
 # Build settings
@@ -38,7 +38,8 @@ sass:
 
 disqus:
   shortname: tammetalong
-  # Exclude from processing.
+
+# Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".
