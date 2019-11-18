@@ -1,8 +1,20 @@
-<meta property="og:title" content="{{ site.title | escape }}">
+{% if page.title %}
+    <meta property="og:title" content="{{ page.title | escape }}">
+{% else %}
+    <meta property="og:title" content="{{ site.title | escape }}">
+{% endif %}
+{if page.title %}
+    <meta property="og:type" content="article">
+{% else %}
+    <meta property="og:type" content="website">
+{% endif %}
 <meta property="og:url" content="{{ site.url | escape }}">
-<meta property="og:type" content="">
-<meta property="og:image" content="{{ site.url | escape }}/assets/imgages/code.jpg">
+<!-- Cant get images to show yet -->
+<meta property="og:image:url" content="{{ site.url }}/assets/images/morecode.png">
+<meta property="og:image:secure_url" content="{{ site.url }}/assets/images/morecode.png">
 <meta property="og:image:alt" content="A computer screen filled with code">
 <!-- Image width and height should be set to 300 in order for og:image to work in WhatsApp -->
+<!--
 <meta property="og:image:width" content="300">
 <meta property="og:image:height" content="300">
+-->
