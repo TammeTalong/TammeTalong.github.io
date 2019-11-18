@@ -31,6 +31,7 @@ github_username: TammeTalong
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 sass:
   sass_dirr: _sass # sets the directory of the sass-files. Not needed since the default name of _sass is used.
