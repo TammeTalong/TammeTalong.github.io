@@ -1,15 +1,4 @@
-{% if page.title %}
-    <meta property="og:title" content="{{ page.title | escape }}">
-{% else %}
-    <meta property="og:title" content="{{ site.title | escape }}">
-{% endif %}
-{if page.title %}
-    <meta property="og:type" content="article">
-{% else %}
-    <meta property="og:type" content="website">
-{% endif %}
-<meta property="og:url" content="{{ site.url | escape }}">
-<!-- Cant get images to show yet -->
+<meta property="og:type" content="website">
 <meta property="og:image:url" content="{{ site.url }}/assets/images/morecode.png">
 <meta property="og:image:secure_url" content="{{ site.url }}/assets/images/morecode.png">
 <meta property="og:image:alt" content="A computer screen filled with code">
