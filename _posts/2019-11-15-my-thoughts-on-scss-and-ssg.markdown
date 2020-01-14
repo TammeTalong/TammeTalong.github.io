@@ -22,6 +22,9 @@ This means that the instructions in robots.txt should not be seen as a security 
 To configure robots.txt you specify the robot you want to give instructions to by defining a "User-Agent". If the user-agent is defined with "*" it means the instructions are general and applies to all of the robots visiting your webpage. By using "Disallow: RELATIVE-URL" you can specify which parts of your webpage you wish the robot to ignore, or simply write "/" as the relative-url to disallow all of the content. By paring "Disallow:" with an "Allow:"-instruction you can allow access to parts of the content you wish the robot to ignore.
 Its also very common to add a reference to the webpage sitemap in robots.txt.  
 
+{% highlight ruby %}
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+{% endhighlight %}
 A &lt;meta&gt;-tag can also be included in the webpages &lt;head&gt;-element with information to visiting robots if the webpage wishes for the robot to index the page and search for links to follow or not.
 
 Example:  
@@ -42,6 +45,9 @@ Sometimes humans.txt also includes a section with technical information about th
 
 A section for extended thanks to persons or companies are also included by some.
 
+{% highlight ruby %}
+<link rel="author" href="humans.txt">
+{% endhighlight %}
 A &lt;link&gt;-tag can also be included in the webpages &lt;head&gt;-element with a reference to the humans.txt file.
 
 ### Disqus
@@ -50,15 +56,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis 
 ### Open Graph
 Open graph is used to enable your webpage to turn into an open graph-object, which means you can decide which information to show when a user shares the webpage url on a social media.  
 
-To configure the open graph-object you add &lt;meta&gt;-tags to your webpage &lt;head&gt;-element.  
+To configure the open graph-object you add &lt;meta&gt;-tags to your webpage &lt;head&gt;-element, one for each property.  
 There are four required properties, these are: Title, Type, Image, URL.  
 There are several other optional properties that can also be included to further add information about your webpage or the page that is currently being shared.
 
+{% highlight ruby %}
+<meta property="og:title" content="The title to use">
+{% endhighlight %}
 The "title"-property descripes the title of the open graph-object and should generaly be the same as the title of your webpage or the title of the specific page that is being shared.
 
+{% highlight ruby %}
+<meta property="og:type" content="The type to use">
+{% endhighlight %}
 The "type"-property describes the type of the content. Some types require additional information added, for instance if the type is set to "video" or "audio" information about the duration should be added.
 For this webpage the type is set to "webpage" and therefor does not require any additional information. 
 
+{% highlight ruby %}
+<meta property="og:image" content="Address to the image to use">
+{% endhighlight %}
 The "image"-property consists of a link to an image to show and represent your open graph-object. Several optional properties can be added to configure the image, for instance can the width and height be set to a fixed number of pixels or an alternative text to describe the image can be added.
 
+{% highlight ruby %}
+<meta property="og:url" content="The absolute URL">
+{% endhighlight %}
 The "url"-property is the absolute url to your webpage or the specific page that is being shared. This is used as the objects ID.

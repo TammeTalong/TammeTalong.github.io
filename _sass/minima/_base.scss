@@ -95,6 +95,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: $orange-color;
 }
 
 
@@ -151,7 +152,8 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: darken($background-color, 10%);
+  text-align: center;
 }
 
 code {
