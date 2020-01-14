@@ -48,4 +48,17 @@ A &lt;link&gt;-tag can also be included in the webpages &lt;head&gt;-element wit
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur.
 
 ### Open Graph
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur. Donec lacinia ut est eget tristique. Ut in ipsum tempus odio pellentesque rutrum.
+Open graph is used to enable your webpage to turn into an open graph-object, which means you can decide which information to show when a user shares the webpage url on a social media.  
+
+To configure the open graph-object you add &lt;meta&gt;-tags to your webpage &lt;head&gt;-element.  
+There are four required properties, these are: Title, Type, Image, URL.  
+There are several other optional properties that can also be included to further add information about your webpage or the page that is currently being shared.
+
+The "title"-property descripes the title of the open graph-object and should generaly be the same as the title of your webpage or the title of the specific page that is being shared.
+
+The "type"-property describes the type of the content. Some types require additional information added, for instance if the type is set to "video" or "audio" information about the duration should be added.
+For this webpage the type is set to "webpage" and therefor does not require any additional information. 
+
+The "image"-property consists of a link to an image to show and represent your open graph-object. Several optional properties can be added to configure the image, for instance can the width and height be set to a fixed number of pixels or an alternative text to describe the image can be added.
+
+The "url"-property is the absolute url to your webpage or the specific page that is being shared. This is used as the objects ID.
