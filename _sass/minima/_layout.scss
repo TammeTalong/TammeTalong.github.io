@@ -3,13 +3,19 @@
  */
 .site-header {
   /* border-top: 0px solid $grey-color-dark; */
-  border-bottom: 1px dashed $orange-color;
-  min-height: $spacing-unit * 1.865;
+  /* border-bottom: 1px dashed $orange-color; */
+  min-height: $spacing-unit * 2.5;
+  max-height: $spacing-unit * 4;
+  background-image: url('../../assets/images/Sunshine-headerimage.jpg');
+  background-position: center;
+  width: 100%;
+  background-color: $background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
+// TODO: Remove if not used.
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -26,10 +32,12 @@
 }
 
 .site-nav {
-  float: right;
+  text-align: center;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
+      text-align: center;
+      vertical-align: middle;
       display: none;
   }
 
@@ -38,8 +46,10 @@
   }
 
   .page-link {
-    color: $orange-color;
+    color: $orange-color-light;
+    font-size: $base-font-size * 1.75;
     line-height: $base-line-height;
+    vertical-align: middle;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
