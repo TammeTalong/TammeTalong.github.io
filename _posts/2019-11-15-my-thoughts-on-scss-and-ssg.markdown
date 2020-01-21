@@ -44,7 +44,11 @@ A section for extended thanks to persons or companies are also included by some.
 A `<link>`-tag can also be included in the webpages `<head>`-element with a reference to the humans.txt file.
 
 ### Disqus
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur.
+This webpage uses the free service _Disqus_ to implement the ability to leave comments on blogposts. I chose to use Disqus because it is a well known and free alternative while also being easy to implement. 
+
+First you have to register an account at [_Disqus_](https://disqus.com) and link your webpage to your account. The second thing you have to do is add a predefined code snippet into your layout. The code you get from Disqus evaluates if the _YAML Front Matter_ of the currently active page has a property called _comments_ set to _true_, and if it does it adds a `<div>`-element containing the Disqus comment field to the page.
+
+I implemented the code snippet from Disqus by adding a html-file in the _includes folder with the predefined code. I then included that file at the bottom of the page in the layout for blogpost, while adding the property `comments: true` to the front matter of the blogposts where I wish to include the ability to comment.
 
 ### Open Graph
 Open graph is used to enable your webpage to turn into an open graph-object, which means you can decide which information to show when a user shares the webpage url on a social media.  
