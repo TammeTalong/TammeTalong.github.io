@@ -2,11 +2,10 @@
  * Site header
  */
 .site-header {
-  /* border-top: 0px solid $grey-color-dark; */
-  /* border-bottom: 1px dashed $orange-color; */
+  border-bottom: 1px dashed $orange-color;
   min-height: $spacing-unit * 2.5;
   max-height: $spacing-unit * 4;
-  background-image: url('../../assets/images/Sunshine-headerimage.jpg');
+  background-image: url('../../assets/images/headerimage-abstract.jpg');
   background-position: center;
   width: 100%;
   background-color: $background-color;
@@ -46,7 +45,7 @@
   }
 
   .page-link {
-    color: $orange-color-light;
+    color: $orange-color;
     font-size: $base-font-size * 1.75;
     line-height: $base-line-height;
     vertical-align: middle;

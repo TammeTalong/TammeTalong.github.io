@@ -3,7 +3,7 @@ Name: Samuel Meijer
 GitHub: https://github.com/TammeTalong
 
 /* SITE */
-Last updated: 2020/01/14
+Last updated: 2020/01/21
 Language: English
 Standard: HTML5, CSS3
 
