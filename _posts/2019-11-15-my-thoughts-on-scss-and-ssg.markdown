@@ -22,7 +22,7 @@ These things in combination with _Partials/Includes_ makes the development time 
 Other added benefits of a static webpage is the fact that they are both faster and more secure than dynamic webpages, since there is no database or userinput that has to be handeld by the server or can be compromised by ill-willing individuals.
 
 Since a _SSG_ follow the principle of "what you see is what you get", using one is suitable for projects that does not require any dynamic information such as user input or realtime database communication.
-Perfect examples for suitable projects are bloggs, like this one, or webpages where the desired functionality is to present static information, for instance a webpage for a small sports club.  
+Perfect examples for suitable projects are blogs, like this one, or webpages where the desired functionality is to present static information, for instance a webpage for a small sports club.  
 If the webpage requires any dynamic information a _SSG_ should not be used.
 
 ### Robots.txt

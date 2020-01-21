@@ -22,7 +22,7 @@
         <div class="trigger">
             <a class="page-link {% if page.url == '/' %}active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
             <a class="page-link {% if page.url == '/about_me/' %}active{% endif %}" href="{{ "/about_me" | relative_url }}">About Me</a>
-            <a class="page-link {% if page.url == '/blogg/' %}active{% endif %}" href="{{ "/blogg" | relative_url }}">Blogg</a>
+            <a class="page-link {% if page.url == '/blog/' %}active{% endif %}" href="{{ "/blog" | relative_url }}">Blog</a>
           <!-- {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}

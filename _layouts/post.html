@@ -17,6 +17,8 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+
+    <a href="{{ "/blog" | relative_url }}">Take me back to the blog!</a>
   </div>
 
   {%- if site.disqus.shortname -%}
