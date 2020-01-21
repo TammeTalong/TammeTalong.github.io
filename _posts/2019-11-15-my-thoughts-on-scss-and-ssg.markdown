@@ -9,10 +9,35 @@ comments: true
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. 
 
 ### Pre-compiling CSS
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur. Donec lacinia ut est eget tristique. Ut in ipsum tempus odio pellentesque rutrum. In a cursus nulla. Ut ut commodo lorem, eget suscipit lectus. Nam a libero luctus, rhoncus nulla ac, pretium ante. Donec at felis et metus semper lacinia. Proin lobortis arcu nec egestas aliquet.
+A _CSS_ preprocessor is used to add  extra features in the development process of a webpage by extending the functionality of regular _CSS_. This webpage used the _CSS_ preprocessor called [_SASS_](https://sass-lang.com) during its development.
+
+Using _SASS_ enables the ability to use _Variables, Nesting, Partials/Import, Mixins, Extend/Inheritance_ aswell as calculations with _Arithmetic Operators_ while writing _CSS_. Because of this I found using _SASS_ to be more similar to coding in _JavaScript_ than when writing regular _CSS_, and therefor removed alot of the repetitiveness that can occur when writing regular _CSS_. Since the design of this webpage is a modefied version of the _Jekyll_-theme called _Minima_, that already contains alot of _CSS_ written with _SASS_, all of the extra functionality mentioned above has been used. 
+
+_Variables_ are perfect to use for values that will be repeated alot, for instance the size and color of text. By using a variable to define a desired value it gives the possibility to change a single value in one place while still affecting several different elements on various sections of your webpage, hence leading to less need for repetition aswell as easier maintenance.
+
+_Nesting_ refers to the ability to write _CSS_ for several elements that are children of a specific element or class at the same time, leading to less need for repetition aswell as better structuring than when writing regular _CSS_.
+
+_Partials/Import_ refers to the ability to write CSS in several different files that can be linked to each other, very similar to modules in _JavaScript_. This makes it easier to separate styling with different purposes from each other, and therefore makes it easier to manage your styling. As an example the styling during the development of this webpage was structured to separate the basic styling done to elements from the styling done for layout purposes, aswell as keeping all of the variables in a separate file.
+
+_Mixins_ are very similar to functions in programming languages, which can be usefull when applying a value to several settings at once or calculate a new value from a given value. In this webpage _Mixins_ has been used primarily to set font sizes relative to a given "standard size" that is defined by a variable. Correct use of _Mixins_ is one of the best and most used tools to combat repetitiveness when writing _CSS_ with a preprocessor.
+
+_Extend/Inheritance_ is used to make a _CSS_-class inherit settings from another _CSS_-class. This is done to prevent the need to use several _CSS_-classes on a single element, and can also be used to prevent repetition of styling if two or more _CSS_-classes share several settings with each other. On this webpage _Extend/Inheritance_ was mainly used on classes that act as "Wrappers" and share several similar settings while still having a few settings that separate them from each other.
+
+_Arithmetic Operators_ gives the ability to performe calculations while styling with _CSS_. This is very useful when combined with _Variables_ and _Mixins_, and it is with these features that _Arithmetic Operators_ has been used in the development of this webpage.
+
+#### Pre-compiling CSS - Cons
+While _CSS_ preprocessors adds alot of extra functionality and features, they also come with some possible cons you have to take into consideration.  
+
+First and foremost, the styling you write with a _CSS_ preprocessors has to be compiled into "regular" _CSS_ before it can be applied to a webpage. The most obvious drawback of this is that more tools are needed than if you write regular _CSS_, both for the preprocessor aswell as the compiler, hence adding more complexity and the possibility for bugs associated with the tools. Another drawback is that debugging gets harder as the line numbers in the compiled _CSS_-file does not match the line numbers of the files that is used in the preprocessor. A possible solution to that specific problem is using so called _Source Maps_.  
+
+Another problem that occurs when working in a team is that each and every member has to use to same tools and methods while working on the project.  
+
+One thing I personally felt while working with this webpage is that it is easy to use features just because they are available, even if they are not really needed. It is also very easy to overuse some features, such as nesting, making it possibly worse to manage than if done with regular _CSS_.  
+
+A possible drawback with this specific webpage is that I think there are probably quite a bit of styling that is no longer used or needed, since the design of this webpage is a modefied version of a _Jekyll_-theme. One of the reasons why I chose not to go through and test each of the styling settings is the fact that it is split into several files with quite a bit of _Mixins_, _Variables_ and _Extend/Inheritance_. This makes it very timeconsuming to go through and test all of the styling that is not directly written by me, since a minor change somewhere can have a major impact on a not so obvious part.
 
 ### Static Site Generators (SSG)
-A static site generator(_SSG_) is used to generate a static webpage from a collection of sourcefiles. This webpage uses the _SSG_ called [_Jekyll_](https://jekyllrb.com) in its development. I had zero experience with using a _SSG_ before this webpage and I have to admit that my first impression was that it felt a little advanced and complicated when compared to regular development without _SSG:s_. After a couple of hours of reading and testing I instead appricieated much of the possibilites that a _SSG_ enables.  
+A static site generator(_SSG_) is used to generate a static webpage from a collection of sourcefiles. This webpage uses the _SSG_ called [_Jekyll_](https://jekyllrb.com) in its development. I had zero experience with using a _SSG_ before this webpage and I have to admit that my first impression was that it felt a little advanced and complicated when compared to regular development without _SSG:s_. After a couple of hours of reading and testing I instead appricieated much of the possibilites that a _SSG_ enables.
 
 The ability to use _Partials/Includes_ in combination with the ability to define different _layouts_ makes it easy to customize your webpage and its different sections without repetitve coding. This means that for example the `<header>` and `<footer>`-elements only has to be written once and can be included in every page by linking instead of having to be rewritten for every single page.
 
