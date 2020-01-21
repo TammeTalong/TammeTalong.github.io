@@ -12,7 +12,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur. Donec lacinia ut est eget tristique. Ut in ipsum tempus odio pellentesque rutrum. In a cursus nulla. Ut ut commodo lorem, eget suscipit lectus. Nam a libero luctus, rhoncus nulla ac, pretium ante. Donec at felis et metus semper lacinia. Proin lobortis arcu nec egestas aliquet.
 
 ### Static Site Generators (SSG)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. Mauris semper ornare nibh at tristique. Pellentesque aliquam a est vel consectetur. Donec lacinia ut est eget tristique. Ut in ipsum tempus odio pellentesque rutrum. In a cursus nulla. Ut ut commodo lorem, eget suscipit lectus. Nam a libero luctus, rhoncus nulla ac, pretium ante. Donec at felis et metus semper lacinia. Proin lobortis arcu nec egestas aliquet.
+A static site generator(_SSG_) is used to generate a static webpage from a collection of sourcefiles. This webpage uses the _SSG_ called [_Jekyll_](https://jekyllrb.com) in its development. I had zero experience with using a _SSG_ before this webpage and I have to admit that my first impression was that it felt a little advanced and complicated when compared to regular development without _SSG:s_. After a couple of hours of reading and testing I instead appricieated much of the possibilites that a _SSG_ enables.  
+
+The ability to use _Partials/Includes_ in combination with the ability to define different _layouts_ makes it easy to customize your webpage and its different sections without repetitve coding. This means that for example the `<header>` and `<footer>`-elements only has to be written once and can be included in every page by linking instead of having to be rewritten for every single page.
+
+The abbility to use _variables, loops_ and _evaluation_ means that its easy to customize the content and get the desired functionality or look for your specific content. Another added possibility with _Jekyll_ is the ability to write the textcontent in _Markdown_ instead of directly in the HTML-files.  
+These things in combination with _Partials/Includes_ makes the development time considerably lower, once you get the hang of it, while also allowing easier maintenance after launch. 
+
+Other added benefits of a static webpage is the fact that they are both faster and more secure than dynamic webpages, since there is no database or userinput that has to be handeld by the server or can be compromised by ill-willing individuals.
+
+Since a _SSG_ follow the principle of "what you see is what you get", using one is suitable for projects that does not require any dynamic information such as user input or realtime database communication.
+Perfect examples for suitable projects are bloggs, like this one, or webpages where the desired functionality is to present static information, for instance a webpage for a small sports club.  
+If the webpage requires any dynamic information a _SSG_ should not be used.
 
 ### Robots.txt
 Robots.txt is used to give instructions to web robots. It can be configured for specific web robots or contain general instructions for all of them. The main functionality of robots.txt is to allow or disallow access to certain parts of your webpage when the robot crawls through it.  
