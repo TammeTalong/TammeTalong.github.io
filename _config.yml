@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Webpage-title
+title: SM:s Webpage
 email: sm223fj@student.lnu.se
 author: Samuel Meijer
 description: >- # this means to ignore newlines until "baseurl:"
   Samuel Meijers webpage for course 1DV022 - Client-based Webprogramming
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://TammeTalong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: TammeTalong
 
 # Build settings
