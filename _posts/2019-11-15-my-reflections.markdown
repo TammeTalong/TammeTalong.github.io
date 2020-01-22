@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "My thoughts on SCSS and SSG"
+title:  "My thoughts and reflections"
 author: Samuel Meijer
 date:   2019-11-15 08:25:30 +0100
-categories: jekyll update
 comments: true
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, felis a luctus luctus, velit purus aliquam diam, a facilisis nunc lorem et turpis. Praesent imperdiet quam a sem scelerisque, sit amet tempus arcu iaculis. Aliquam sollicitudin felis tortor, nec porta justo malesuada eu. 
+This is a short summary of my thoughts and reflections on the tools and methods used in the development of this webpage.
 
 ### Pre-compiling CSS
 A _CSS_ preprocessor is used to add  extra features in the development process of a webpage by extending the functionality of regular _CSS_. This webpage used the _CSS_ preprocessor called [_SASS_](https://sass-lang.com) during its development.
